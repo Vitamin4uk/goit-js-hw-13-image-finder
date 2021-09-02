@@ -1,0 +1,31 @@
+.photo-card {
+  box-sizing: border-box;
+  flex-basis: calc((100% - 3 * 30px) / 3);
+  margin-top: 30px;
+  margin-left: 30px;
+  border: 1px solid rgb(80, 79, 79);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.photo-wrapper {
+  height: 300px;
+  overflow: hidden;
+}
+
+.photo-card img {
+  display: block;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+}
+
+.stats-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
