@@ -13,4 +13,4 @@ var e,t=arguments[3];!function(t,r){"object"==typeof exports&&"object"==typeof m
 },{"handlebars/dist/handlebars.runtime":"pAws"}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");var e=r(require("./js/apiService")),t=r(require("./js/getRefs")),n=r(require("./templates/imageCard.hbs"));function r(e){return e&&e.__esModule?e:{default:e}}const s=(0,t.default)(),i=new e.default;function a(e){e.preventDefault(),s.gallery.innerHTML="",i.query=e.currentTarget.elements.query.value,u()}function l(e){i.incrementPage(),u()}function u(){const e=s.gallery.lastElementChild;i.fetchImages().then(t=>{const r=(0,n.default)(t);s.gallery.insertAdjacentHTML("beforeend",r),s.btn.classList.remove("is-hidden"),e&&c(e)})}function c(e){e.nextElementSibling.scrollIntoView({behavior:"smooth",block:"start"})}s.form.addEventListener("submit",a),s.btn.addEventListener("click",l);
 },{"./sass/main.scss":"clu1","./js/apiService":"eQwa","./js/getRefs":"qJUB","./templates/imageCard.hbs":"AxJq"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-js-hw-13-image-finder/src.d6c3102b.js.map
+//# sourceMappingURL=/goit-js-hw-13-image-finder/src.5d0ed80d.js.map
